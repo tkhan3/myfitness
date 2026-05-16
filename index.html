@@ -1,0 +1,1534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tanveer's 12-Week Strength & Fat-Loss Plan</title>
+<meta name="description" content="A 12-week personalised strength training and fat-loss plan for a 44-year-old North-Indian Muslim, including 5-day gym split, halal-friendly Indore meal plan, and YouTube form videos for every exercise.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1f2937;
+    --ink-soft: #4b5563;
+    --muted: #6b7280;
+    --bg: #faf7f2;
+    --paper: #ffffff;
+    --line: #e7e2da;
+    --accent: #b45309;
+    --accent-soft: #fef3c7;
+    --accent-deep: #92400e;
+    --good: #047857;
+    --bad: #b91c1c;
+    --serif: "Fraunces", Georgia, serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --maxw: 1100px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-deep); }
+  a:hover { color: var(--accent); }
+
+  /* ---------- nav ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(250,247,242,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav__inner {
+    max-width: var(--maxw); margin: 0 auto; padding: 12px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  }
+  .nav__brand { font-family: var(--serif); font-weight: 700; font-size: 18px; color: var(--ink); }
+  .nav__brand span { color: var(--accent); }
+  .nav__links { display: flex; gap: 22px; font-size: 14px; flex-wrap: wrap; }
+  .nav__links a { color: var(--ink-soft); text-decoration: none; }
+  .nav__links a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero {
+    max-width: var(--maxw); margin: 0 auto; padding: 64px 24px 48px;
+  }
+  .hero__eyebrow {
+    font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600;
+  }
+  .hero h1 {
+    font-family: var(--serif); font-weight: 700;
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.05; margin: 12px 0 18px;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+  .hero h1 em { font-style: italic; color: var(--accent); }
+  .hero__sub {
+    font-size: clamp(17px, 2.2vw, 21px);
+    color: var(--ink-soft); max-width: 720px; margin: 0 0 28px;
+  }
+  .hero__meta {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px; margin-top: 32px;
+  }
+  .hero__meta div {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .hero__meta dt {
+    font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .hero__meta dd {
+    margin: 4px 0 0; font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--ink);
+  }
+
+  /* ---------- section ---------- */
+  section {
+    max-width: var(--maxw); margin: 0 auto; padding: 56px 24px;
+    border-top: 1px solid var(--line);
+  }
+  .section__hd { display: flex; align-items: baseline; gap: 18px; margin-bottom: 28px; flex-wrap: wrap; }
+  .section__num {
+    font-family: var(--serif); font-style: italic; color: var(--accent);
+    font-size: 20px;
+  }
+  .section__hd h2 {
+    font-family: var(--serif); font-size: clamp(28px, 4vw, 40px);
+    margin: 0; letter-spacing: -0.01em; font-weight: 700;
+  }
+  .section__intro { color: var(--ink-soft); max-width: 760px; margin: 0 0 32px; font-size: 17px; }
+
+  /* ---------- snapshot ---------- */
+  .snapshot {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .stat {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px;
+  }
+  .stat__label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
+  .stat__value { font-family: var(--serif); font-size: 28px; font-weight: 700; margin-top: 6px; color: var(--ink); }
+  .stat__note { font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
+
+  /* ---------- principles ---------- */
+  .principles { list-style: none; counter-reset: pr; padding: 0; margin: 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .principles li {
+    counter-increment: pr;
+    background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: 12px; padding: 18px 20px 18px 56px; position: relative;
+  }
+  .principles li::before {
+    content: counter(pr, decimal-leading-zero);
+    position: absolute; left: 16px; top: 16px;
+    font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--accent);
+  }
+
+  /* ---------- workout cards ---------- */
+  .day-grid {
+    display: grid; gap: 22px;
+  }
+  .day-card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+    padding: 22px 22px 8px; overflow: hidden;
+  }
+  .day-card__hd {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 16px; margin-bottom: 8px;
+  }
+  .eyebrow { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .day-card h3 {
+    font-family: var(--serif); font-size: 24px; margin: 4px 0 0; letter-spacing: -0.01em;
+  }
+  .pill {
+    background: var(--accent-soft); color: var(--accent-deep);
+    padding: 4px 12px; border-radius: 999px; font-size: 12px; font-weight: 600;
+    white-space: nowrap;
+  }
+  .warmup { color: var(--ink-soft); font-size: 14px; margin: 6px 0 14px; }
+  .warmup strong { color: var(--ink); }
+  .ex-table-wrap { overflow-x: auto; margin: 0 -8px; }
+  .ex-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .ex-table th {
+    text-align: left; font-weight: 600; color: var(--muted);
+    font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+    padding: 10px 12px; border-bottom: 1px solid var(--line);
+  }
+  .ex-table td { padding: 14px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  .ex-table tr:last-child td { border-bottom: none; }
+  .ex-name { font-weight: 600; color: var(--ink); }
+  .watch {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: var(--accent); color: white; text-decoration: none;
+    padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600;
+    white-space: nowrap;
+  }
+  .watch:hover { background: var(--accent-deep); color: white; }
+
+  /* ---------- meals ---------- */
+  .meal-tabs {
+    display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px;
+    background: var(--paper); padding: 6px; border-radius: 12px; border: 1px solid var(--line);
+  }
+  .meal-tab {
+    border: none; background: transparent; cursor: pointer;
+    padding: 8px 14px; border-radius: 8px;
+    font-size: 14px; font-weight: 600; color: var(--ink-soft);
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .meal-tab.is-active { background: var(--accent); color: white; }
+  .meal-tab:hover:not(.is-active) { background: var(--accent-soft); color: var(--accent-deep); }
+  .meal-card { display: none; }
+  .meal-card.is-active { display: block; }
+  .meal-card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+    padding: 22px;
+  }
+  .meal-card__hd h3 {
+    font-family: var(--serif); margin: 0 0 18px; font-size: 22px; color: var(--accent-deep);
+  }
+  .meal-rows { display: grid; gap: 14px; }
+  .meal-row {
+    display: grid; grid-template-columns: 200px 1fr; gap: 18px;
+    padding: 14px 0; border-top: 1px solid var(--line);
+  }
+  .meal-row:first-child { border-top: none; padding-top: 0; }
+  .meal-row__meta .meal-time { font-weight: 600; color: var(--ink); }
+  .meal-row__meta .meal-name { color: var(--accent-deep); font-size: 14px; }
+  .meal-row__meta .meal-kcal {
+    display: inline-block; margin-top: 6px;
+    background: var(--accent-soft); color: var(--accent-deep);
+    padding: 2px 10px; border-radius: 999px; font-size: 12px; font-weight: 600;
+  }
+  .meal-row__items ul { margin: 0; padding-left: 18px; }
+  .meal-row__items li { margin-bottom: 4px; }
+  .meal-note { margin: 8px 0 0; font-style: italic; color: var(--accent); font-size: 14px; }
+
+  /* ---------- food columns ---------- */
+  .food-cols {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+  }
+  .food-list {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px;
+  }
+  .food-list h4 {
+    margin: 0 0 12px; font-family: var(--serif); font-size: 19px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .food-list ul { margin: 0; padding-left: 18px; }
+  .food-list li { margin-bottom: 6px; font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+  .food-list--good { border-top: 4px solid var(--good); }
+  .food-list--limit { border-top: 4px solid var(--accent); }
+  .food-list--avoid { border-top: 4px solid var(--bad); }
+  .food-list--good h4 { color: var(--good); }
+  .food-list--limit h4 { color: var(--accent-deep); }
+  .food-list--avoid h4 { color: var(--bad); }
+
+  /* ---------- swaps table ---------- */
+  .swaps {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+    overflow: hidden;
+  }
+  .swaps table { width: 100%; border-collapse: collapse; }
+  .swaps th, .swaps td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+  .swaps th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .swaps tr:last-child td { border-bottom: none; }
+  .swaps td:first-child { color: var(--bad); text-decoration: line-through; text-decoration-color: rgba(185,28,28,0.4); }
+  .swaps td:last-child { color: var(--good); font-weight: 500; }
+
+  /* ---------- supplements ---------- */
+  .supp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .supp {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px;
+  }
+  .supp h4 { margin: 0 0 4px; font-family: var(--serif); font-size: 19px; color: var(--accent-deep); }
+  .supp .dose { font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+  .supp p { margin: 0; font-size: 14px; color: var(--ink-soft); }
+
+  /* ---------- red flags ---------- */
+  .red-flags {
+    background: #fff7ed; border: 1px solid #fed7aa; border-left: 6px solid var(--bad);
+    border-radius: 14px; padding: 22px;
+  }
+  .red-flags h4 { margin: 0 0 12px; color: var(--bad); font-family: var(--serif); font-size: 20px; }
+  .red-flags ul { margin: 0; padding-left: 20px; }
+  .red-flags li { margin-bottom: 6px; color: var(--ink); }
+
+  /* ---------- tracker ---------- */
+  .tracker {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+    overflow-x: auto;
+  }
+  .tracker table { width: 100%; border-collapse: collapse; min-width: 600px; }
+  .tracker th, .tracker td { padding: 12px; border-bottom: 1px solid var(--line); text-align: center; font-size: 14px; }
+  .tracker th { background: var(--accent-soft); color: var(--accent-deep); font-weight: 600; }
+  .tracker td:first-child { font-weight: 600; color: var(--ink); text-align: left; }
+
+  /* ---------- coach note ---------- */
+  .coach-note {
+    background: linear-gradient(135deg, var(--accent-soft), #fff7ed);
+    border: 1px solid #fed7aa; border-radius: 18px;
+    padding: 36px 32px; margin-top: 12px;
+  }
+  .coach-note h3 { font-family: var(--serif); margin: 0 0 16px; font-size: 26px; color: var(--accent-deep); }
+  .coach-note p { margin: 0 0 14px; font-size: 17px; line-height: 1.6; }
+  .coach-note ul { padding-left: 22px; margin: 0 0 16px; }
+  .coach-note li { margin-bottom: 6px; font-weight: 500; }
+  .coach-note .sign { font-family: var(--serif); font-style: italic; color: var(--accent); font-weight: 700; }
+
+  /* ---------- footer ---------- */
+  footer.foot {
+    max-width: var(--maxw); margin: 40px auto 0; padding: 40px 24px 60px;
+    border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 13px;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 640px) {
+    .meal-row { grid-template-columns: 1fr; gap: 6px; }
+    .hero { padding: 40px 20px 28px; }
+    section { padding: 40px 20px; }
+    .nav__links { display: none; }
+  }
+  @media print {
+    .nav, .meal-tabs, .watch { display: none !important; }
+    .meal-card { display: block !important; page-break-inside: avoid; }
+    body { background: white; }
+    section { page-break-inside: avoid; border-top: 1px solid #ccc; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <div class="nav__brand">Tanveer<span> · 12-Week Plan</span></div>
+    <div class="nav__links">
+      <a href="#snapshot">Snapshot</a>
+      <a href="#principles">Principles</a>
+      <a href="#workouts">Workouts</a>
+      <a href="#diet">Diet</a>
+      <a href="#supplements">Supplements</a>
+      <a href="#tracker">Tracker</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero__eyebrow">Personal coaching plan · Indore, May 2026</div>
+  <h1>Twelve weeks to a <em>stronger, lighter</em> you.</h1>
+  <p class="hero__sub">A halal-friendly, Indore-tested plan built for a 44-year-old man at 114 kg. Five strength sessions a week, North-Indian Muslim home cooking, and a clear path to losing 3–4 kg every month — without giving up the food you actually live on.</p>
+
+  <dl class="hero__meta">
+    <div><dt>Starting weight</dt><dd>114 kg</dd></div>
+    <div><dt>Height · Age</dt><dd>5&#39;11&quot; · 44</dd></div>
+    <div><dt>Daily calories</dt><dd>2100 kcal</dd></div>
+    <div><dt>Protein target</dt><dd>180 g</dd></div>
+  </dl>
+</header>
+
+<section id="snapshot">
+  <div class="section__hd">
+    <span class="section__num">01</span>
+    <h2>Your Snapshot</h2>
+  </div>
+  <p class="section__intro">These are the numbers to anchor every day to. Hit them within ±10% and the weight comes off on schedule.</p>
+  <div class="snapshot">
+    <div class="stat"><div class="stat__label">Calories</div><div class="stat__value">2100</div><div class="stat__note">≈ 800 kcal deficit per day</div></div>
+    <div class="stat"><div class="stat__label">Protein</div><div class="stat__value">180 g</div><div class="stat__note">1.6 g per kg bodyweight</div></div>
+    <div class="stat"><div class="stat__label">Carbs</div><div class="stat__value">200 g</div><div class="stat__note">Mostly chapati, daal, fruit</div></div>
+    <div class="stat"><div class="stat__label">Fat</div><div class="stat__value">65 g</div><div class="stat__note">2 tsp added oil/ghee max</div></div>
+    <div class="stat"><div class="stat__label">Water</div><div class="stat__value">3–4 L</div><div class="stat__note">Spread through the day</div></div>
+    <div class="stat"><div class="stat__label">Steps</div><div class="stat__value">10K</div><div class="stat__note">Separate from gym</div></div>
+    <div class="stat"><div class="stat__label">Sleep</div><div class="stat__value">7–8h</div><div class="stat__note">Non-negotiable</div></div>
+    <div class="stat"><div class="stat__label">Loss target</div><div class="stat__value">3–4 kg</div><div class="stat__note">Per month, sustained</div></div>
+  </div>
+</section>
+
+<section id="principles">
+  <div class="section__hd">
+    <span class="section__num">02</span>
+    <h2>The 10 Principles</h2>
+  </div>
+  <p class="section__intro">Tape these to your bathroom mirror. When the plan feels overwhelming, fall back to these.</p>
+  <ol class="principles">
+    <li>Strength training drives fat loss at 44 better than endless cardio — it preserves muscle and bone density.</li><li>Walking is your secret weapon. Hit 10,000 steps daily — separate from gym workouts.</li><li>Protein at every meal. Aim for a palm-size portion (chicken/paneer/eggs/daal) at each main meal.</li><li>Sleep 7–8 hours. Below this, your body holds on to belly fat. Non-negotiable.</li><li>Hydration: 3–4 litres of water. Most &#39;hunger&#39; between meals is thirst.</li><li>Weigh weekly — same day, morning, after toilet, before food. Daily weighing causes anxiety, not insight.</li><li>Measure waist monthly with a tape. More honest than the scale.</li><li>Get blood work done before starting: fasting glucose, HbA1c, lipid panel, Vit D, B12, TSH.</li><li>Alcohol slows fat loss massively. Easy choice for you given your faith — keep it that way.</li><li>The plan only works if you do it 80% of the time for 12 weeks. Don&#39;t chase perfection — chase consistency.</li>
+  </ol>
+</section>
+
+<section id="workouts">
+  <div class="section__hd">
+    <span class="section__num">03</span>
+    <h2>The 5-Day Workout Split</h2>
+  </div>
+  <p class="section__intro">Heavy compound lifts four days a week, one HIIT + core day, plus a long walk and a true rest day. Every exercise links to a form video — watch it the first time you do the lift, then every fortnight as a refresher.</p>
+  <div class="day-grid">
+    
+<article class="day-card">
+  <header class="day-card__hd">
+    <div>
+      <div class="eyebrow">Monday</div>
+      <h3>Chest + Triceps + Core</h3>
+    </div>
+    <span class="pill">~50 min</span>
+  </header>
+  <p class="warmup"><strong>Warm-up.</strong> 5 min treadmill walk + arm circles + 2 light warm-up sets</p>
+  <div class="ex-table-wrap">
+  <table class="ex-table">
+    <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th><th>Form</th></tr></thead>
+    <tbody>
+      
+        <tr>
+          <td class="ex-name">Barbell Bench Press</td>
+          <td>4</td>
+          <td>8–10</td>
+          <td>90 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=barbell%20bench%20press%20proper%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Incline Dumbbell Press</td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>75 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=incline%20dumbbell%20press%20form%20Jeff%20Nippard" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Cable Chest Fly (mid)</td>
+          <td>3</td>
+          <td>12</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=cable%20chest%20fly%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Tricep Rope Pushdown</td>
+          <td>3</td>
+          <td>12–15</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=tricep%20rope%20pushdown%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Overhead Dumbbell Tricep Extension</td>
+          <td>3</td>
+          <td>12</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=overhead%20dumbbell%20tricep%20extension%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Plank</td>
+          <td>3</td>
+          <td>45 sec hold</td>
+          <td>45 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=perfect%20plank%20form%20tutorial" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</article>
+<article class="day-card">
+  <header class="day-card__hd">
+    <div>
+      <div class="eyebrow">Tuesday</div>
+      <h3>Back + Biceps</h3>
+    </div>
+    <span class="pill">~50 min</span>
+  </header>
+  <p class="warmup"><strong>Warm-up.</strong> 5 min rowing machine + band pull-aparts</p>
+  <div class="ex-table-wrap">
+  <table class="ex-table">
+    <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th><th>Form</th></tr></thead>
+    <tbody>
+      
+        <tr>
+          <td class="ex-name">Lat Pulldown (wide grip)</td>
+          <td>4</td>
+          <td>10–12</td>
+          <td>90 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=lat%20pulldown%20form%20Jeff%20Nippard" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Seated Cable Row</td>
+          <td>3</td>
+          <td>10</td>
+          <td>75 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=seated%20cable%20row%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">One-Arm Dumbbell Row</td>
+          <td>3</td>
+          <td>10 / side</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=one%20arm%20dumbbell%20row%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Face Pulls</td>
+          <td>3</td>
+          <td>15</td>
+          <td>45 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=face%20pull%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Dumbbell Bicep Curl</td>
+          <td>3</td>
+          <td>12</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20bicep%20curl%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Hammer Curl</td>
+          <td>3</td>
+          <td>12</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=hammer%20curl%20form%20tutorial" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</article>
+<article class="day-card">
+  <header class="day-card__hd">
+    <div>
+      <div class="eyebrow">Wednesday</div>
+      <h3>HIIT + Core</h3>
+    </div>
+    <span class="pill">~45 min</span>
+  </header>
+  <p class="warmup"><strong>Warm-up.</strong> 5 min easy walk + dynamic stretches</p>
+  <div class="ex-table-wrap">
+  <table class="ex-table">
+    <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th><th>Form</th></tr></thead>
+    <tbody>
+      
+        <tr>
+          <td class="ex-name">Incline Treadmill Intervals</td>
+          <td>10 rounds</td>
+          <td>1 min hard / 1 min easy</td>
+          <td>—</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=treadmill%20incline%20HIIT%20walking%20workout%20fat%20loss" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Steady Incline Walk</td>
+          <td>1</td>
+          <td>10 min @ 4.5 km/h, incline 8</td>
+          <td>—</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=12-3-30%20treadmill%20walking%20workout" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Dead Bug</td>
+          <td>3</td>
+          <td>12 / side</td>
+          <td>30 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=dead%20bug%20exercise%20form%20core" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Russian Twists (medicine ball)</td>
+          <td>3</td>
+          <td>20 total</td>
+          <td>30 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=russian%20twist%20form%20core%20exercise" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Hanging Knee Raise</td>
+          <td>3</td>
+          <td>10</td>
+          <td>45 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=hanging%20knee%20raise%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Mountain Climbers</td>
+          <td>3</td>
+          <td>30 sec</td>
+          <td>30 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=mountain%20climber%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</article>
+<article class="day-card">
+  <header class="day-card__hd">
+    <div>
+      <div class="eyebrow">Thursday</div>
+      <h3>Legs + Glutes</h3>
+    </div>
+    <span class="pill">~55 min</span>
+  </header>
+  <p class="warmup"><strong>Warm-up.</strong> 5 min stationary bike + bodyweight squats x 15</p>
+  <div class="ex-table-wrap">
+  <table class="ex-table">
+    <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th><th>Form</th></tr></thead>
+    <tbody>
+      
+        <tr>
+          <td class="ex-name">Goblet Squat (dumbbell)</td>
+          <td>4</td>
+          <td>10</td>
+          <td>90 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=goblet%20squat%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Leg Press</td>
+          <td>3</td>
+          <td>12</td>
+          <td>90 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=leg%20press%20proper%20form%20Jeff%20Nippard" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Romanian Deadlift (dumbbell)</td>
+          <td>3</td>
+          <td>10</td>
+          <td>75 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20romanian%20deadlift%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Walking Lunges</td>
+          <td>3</td>
+          <td>10 / leg</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=walking%20lunge%20form%20tutorial" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Seated Leg Curl</td>
+          <td>3</td>
+          <td>12</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=seated%20leg%20curl%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Standing Calf Raise</td>
+          <td>3</td>
+          <td>15</td>
+          <td>45 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=standing%20calf%20raise%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</article>
+<article class="day-card">
+  <header class="day-card__hd">
+    <div>
+      <div class="eyebrow">Friday</div>
+      <h3>Shoulders + Arms</h3>
+    </div>
+    <span class="pill">~50 min</span>
+  </header>
+  <p class="warmup"><strong>Warm-up.</strong> 5 min cardio + shoulder dislocates with band</p>
+  <div class="ex-table-wrap">
+  <table class="ex-table">
+    <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th><th>Form</th></tr></thead>
+    <tbody>
+      
+        <tr>
+          <td class="ex-name">Seated Dumbbell Shoulder Press</td>
+          <td>4</td>
+          <td>10</td>
+          <td>90 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=seated%20dumbbell%20shoulder%20press%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Dumbbell Lateral Raise</td>
+          <td>3</td>
+          <td>15</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20lateral%20raise%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Rear Delt Fly (machine or DB)</td>
+          <td>3</td>
+          <td>12</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=rear%20delt%20fly%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">EZ Bar Curl</td>
+          <td>3</td>
+          <td>10</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=EZ%20bar%20curl%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Cable Rope Tricep Extension</td>
+          <td>3</td>
+          <td>12</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=cable%20rope%20tricep%20extension%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Farmer&#39;s Walk (heavy dumbbells)</td>
+          <td>3</td>
+          <td>30 sec / 20 m</td>
+          <td>60 sec</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=farmers%20walk%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</article>
+<article class="day-card">
+  <header class="day-card__hd">
+    <div>
+      <div class="eyebrow">Saturday</div>
+      <h3>Long Walk + Mobility</h3>
+    </div>
+    <span class="pill">~60 min</span>
+  </header>
+  
+  <div class="ex-table-wrap">
+  <table class="ex-table">
+    <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th><th>Form</th></tr></thead>
+    <tbody>
+      
+        <tr>
+          <td class="ex-name">Brisk Outdoor Walk</td>
+          <td>1</td>
+          <td>5–6 km @ 5.5 km/h</td>
+          <td>—</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=brisk%20walking%20technique%20fat%20loss" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Full Body Mobility Flow</td>
+          <td>1</td>
+          <td>15 min</td>
+          <td>—</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=full%20body%20mobility%20routine%2015%20min%20beginner" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Hip Flexor Stretch</td>
+          <td>2</td>
+          <td>30 sec / side</td>
+          <td>—</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=couch%20stretch%20hip%20flexor%20Kelly%20Starrett" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</article>
+<article class="day-card">
+  <header class="day-card__hd">
+    <div>
+      <div class="eyebrow">Sunday</div>
+      <h3>Rest</h3>
+    </div>
+    <span class="pill">Off</span>
+  </header>
+  
+  <div class="ex-table-wrap">
+  <table class="ex-table">
+    <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th><th>Form</th></tr></thead>
+    <tbody>
+      
+        <tr>
+          <td class="ex-name">Optional: light family walk</td>
+          <td>—</td>
+          <td>20–30 min</td>
+          <td>—</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=zone%202%20walking%20benefits" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+        <tr>
+          <td class="ex-name">Foam roll / sauna / massage</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=foam%20roller%20routine%20full%20body" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</article>
+  </div>
+
+  <div style="margin-top:28px;">
+    <h3 style="font-family:var(--serif); font-size:22px; color: var(--accent-deep); margin-bottom: 10px;">Home Dumbbell Backup — for travel or busy days (35 min)</h3>
+    <p style="color: var(--ink-soft); margin: 0 0 14px;">Run as 3 rounds, 12 reps each, 45 sec rest between exercises, 90 sec between rounds.</p>
+    <div class="day-card" style="padding: 14px 22px;">
+      <ul style="padding-left:0; list-style:none; margin:0;">
+        
+          <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
+            <span class="ex-name">Dumbbell Goblet Squat</span>
+            <a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20goblet%20squat%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+          </li>
+          <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
+            <span class="ex-name">Dumbbell Floor Press</span>
+            <a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20floor%20press%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+          </li>
+          <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
+            <span class="ex-name">Bent-Over Dumbbell Row</span>
+            <a class="watch" href="https://www.youtube.com/results?search_query=bent%20over%20dumbbell%20row%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+          </li>
+          <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
+            <span class="ex-name">Standing Dumbbell Press</span>
+            <a class="watch" href="https://www.youtube.com/results?search_query=standing%20dumbbell%20overhead%20press%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+          </li>
+          <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
+            <span class="ex-name">Dumbbell Romanian Deadlift</span>
+            <a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20romanian%20deadlift%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+          </li>
+          <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
+            <span class="ex-name">Dumbbell Curl + Press</span>
+            <a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20curl%20to%20press%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+          </li>
+          <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
+            <span class="ex-name">Push-ups (on knees if needed)</span>
+            <a class="watch" href="https://www.youtube.com/results?search_query=perfect%20push%20up%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+          </li>
+          <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
+            <span class="ex-name">Plank + Side Plank</span>
+            <a class="watch" href="https://www.youtube.com/results?search_query=plank%20side%20plank%20progression%20core" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="diet">
+  <div class="section__hd">
+    <span class="section__num">04</span>
+    <h2>The Diet — Indore Muslim Halal Plan</h2>
+  </div>
+  <p class="section__intro">Built around the food you already eat: mutton, chicken, fish, paneer, daals, vegetables, dahi, chapati and rice. Use the day tabs to flip through a complete week.</p>
+
+  <div class="meal-tabs" role="tablist">
+    
+      <button class="meal-tab is-active" data-day="0" role="tab">Monday</button>
+      <button class="meal-tab " data-day="1" role="tab">Tuesday</button>
+      <button class="meal-tab " data-day="2" role="tab">Wednesday</button>
+      <button class="meal-tab " data-day="3" role="tab">Thursday</button>
+      <button class="meal-tab " data-day="4" role="tab">Friday</button>
+      <button class="meal-tab " data-day="5" role="tab">Saturday</button>
+      <button class="meal-tab " data-day="6" role="tab">Sunday</button>
+  </div>
+  <div class="meal-pane">
+    
+      <div class="is-active meal-card" data-day-card="0">
+        
+
+  <header class="meal-card__hd"><h3>Monday</h3></header>
+  <div class="meal-rows">
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">7:00 AM</div>
+          <div class="meal-name">Breakfast</div>
+          <div class="meal-kcal">450 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>2 whole eggs + 4 egg whites scramble (onion, tomato, hari mirch, pinch haldi)</li><li>1 multigrain chapati</li><li>150 g low-fat dahi</li><li>Black coffee or kadak chai (no sugar, toned milk)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">10:30 AM</div>
+          <div class="meal-name">Snack</div>
+          <div class="meal-kcal">150 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 apple + 15 almonds</li><li>Or roasted chana 30 g + nimbu pani (no sugar)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">1:30 PM</div>
+          <div class="meal-name">Lunch</div>
+          <div class="meal-kcal">600 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>150 g chicken curry (less oil, tomato-onion base)</li><li>2 atta chapati</li><li>1 katori moong/masoor daal</li><li>1 katori bhindi sabzi</li><li>Kachumbar salad (kheera, pyaaz, tamatar, nimbu)</li><li>1 small bowl dahi</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">5:00 PM</div>
+          <div class="meal-name">Evening</div>
+          <div class="meal-kcal">200 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 scoop whey protein + water</li><li>Or 4 boiled egg whites + green tea</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">8:00 PM</div>
+          <div class="meal-name">Dinner</div>
+          <div class="meal-kcal">600 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>150 g tandoori chicken (no skin)</li><li>1 chapati (skip rice tonight)</li><li>Lauki sabzi 1 katori</li><li>Salad bowl with lemon</li><li>1 cup chaas (low-fat, jeera + kala namak)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">9:30 PM</div>
+          <div class="meal-name">Optional</div>
+          <div class="meal-kcal">100 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Green tea + 1 tsp soaked methi seeds water</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+  </div>
+
+      </div>
+      <div class="meal-card" data-day-card="1">
+        
+
+  <header class="meal-card__hd"><h3>Tuesday</h3></header>
+  <div class="meal-rows">
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">7:00 AM</div>
+          <div class="meal-name">Breakfast</div>
+          <div class="meal-kcal">420 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Vegetable poha (1 katori) cooked in 1 tsp oil + 4 boiled egg whites</li><li>1 cup chai (toned milk, no sugar)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">10:30 AM</div>
+          <div class="meal-name">Snack</div>
+          <div class="meal-kcal">150 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 pear + 10 walnuts halves</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">1:30 PM</div>
+          <div class="meal-name">Lunch</div>
+          <div class="meal-kcal">620 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>200 g paneer bhurji (low oil, lots of veggies)</li><li>2 atta chapati</li><li>1 katori chana daal</li><li>Palak sabzi</li><li>Salad + 1 katori dahi</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">5:00 PM</div>
+          <div class="meal-name">Evening</div>
+          <div class="meal-kcal">180 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Sprouts chaat (moong + chana, lemon, onion, tomato, chaat masala)</li><li>Green tea</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">8:00 PM</div>
+          <div class="meal-name">Dinner</div>
+          <div class="meal-kcal">600 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>150 g grilled fish OR chicken seekh kebab</li><li>1 small katori brown rice (replace chapati)</li><li>Mixed veg sabzi</li><li>Salad</li><li>1 cup chaas</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">9:30 PM</div>
+          <div class="meal-name">Optional</div>
+          <div class="meal-kcal">80 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 cup warm haldi-milk (toned milk, no sugar)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+  </div>
+
+      </div>
+      <div class="meal-card" data-day-card="2">
+        
+
+  <header class="meal-card__hd"><h3>Wednesday</h3></header>
+  <div class="meal-rows">
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">7:00 AM</div>
+          <div class="meal-name">Breakfast</div>
+          <div class="meal-kcal">450 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Besan chilla (2) stuffed with paneer + onion</li><li>1 katori dahi</li><li>Chai (no sugar)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">10:30 AM</div>
+          <div class="meal-name">Snack</div>
+          <div class="meal-kcal">150 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 orange + 15 almonds</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">1:30 PM</div>
+          <div class="meal-name">Lunch</div>
+          <div class="meal-kcal">600 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Mutton paya/yakhni soup (lean cut, fat skimmed) — 1 bowl</li><li>150 g lean mutton curry</li><li>1 chapati only (mutton day = lower carbs)</li><li>Cabbage-carrot sabzi</li><li>Salad + 1 katori dahi</li>
+          </ul>
+          <p class="meal-note">Mutton day — only 1x per week max</p>
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">5:00 PM</div>
+          <div class="meal-name">Evening</div>
+          <div class="meal-kcal">200 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 scoop whey + 1 banana (post-workout)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">8:00 PM</div>
+          <div class="meal-name">Dinner</div>
+          <div class="meal-kcal">550 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Vegetable daal khichdi (1 katori, light ghee)</li><li>Tinda or turai sabzi</li><li>1 cup chaas</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+  </div>
+
+      </div>
+      <div class="meal-card" data-day-card="3">
+        
+
+  <header class="meal-card__hd"><h3>Thursday</h3></header>
+  <div class="meal-rows">
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">7:00 AM</div>
+          <div class="meal-name">Breakfast</div>
+          <div class="meal-kcal">430 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Egg-white masala omelette (5 egg whites + 1 yolk) with mushrooms, capsicum</li><li>1 multigrain toast</li><li>1 cup chai (no sugar)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">10:30 AM</div>
+          <div class="meal-name">Snack</div>
+          <div class="meal-kcal">150 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 cup curd + 1 tsp chia seeds + handful of berries / 1 small fruit</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">1:30 PM</div>
+          <div class="meal-name">Lunch</div>
+          <div class="meal-kcal">620 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>150 g chicken tikka (homemade, hung curd marinade)</li><li>2 atta chapati</li><li>Rajma 1 katori (low oil)</li><li>Salad</li><li>1 katori dahi</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">5:00 PM</div>
+          <div class="meal-name">Evening</div>
+          <div class="meal-kcal">180 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Roasted chana 30 g + chai (no sugar)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">8:00 PM</div>
+          <div class="meal-name">Dinner</div>
+          <div class="meal-kcal">600 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Paneer tikka (150 g) — grilled, low oil</li><li>1 chapati</li><li>Mixed sabzi (gobhi-matar)</li><li>Salad</li><li>Chaas</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+  </div>
+
+      </div>
+      <div class="meal-card" data-day-card="4">
+        
+
+  <header class="meal-card__hd"><h3>Friday</h3></header>
+  <div class="meal-rows">
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">7:00 AM</div>
+          <div class="meal-name">Breakfast</div>
+          <div class="meal-kcal">440 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Oats upma cooked with veggies + 4 egg whites on the side</li><li>Chai (no sugar)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">10:30 AM</div>
+          <div class="meal-name">Snack</div>
+          <div class="meal-kcal">150 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 guava + 15 cashews</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">1:30 PM</div>
+          <div class="meal-name">Lunch</div>
+          <div class="meal-kcal">600 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>150 g grilled chicken breast (hari mirch + lemon marinade)</li><li>2 atta chapati</li><li>Toor daal 1 katori</li><li>Bhindi sabzi</li><li>Salad + dahi</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">5:00 PM</div>
+          <div class="meal-name">Evening</div>
+          <div class="meal-kcal">200 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 scoop whey + 5 almonds (post-workout)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">8:00 PM</div>
+          <div class="meal-name">Dinner</div>
+          <div class="meal-kcal">600 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Fish curry (rohu/basa) 150 g — low oil</li><li>1 small katori jeera rice</li><li>Stir-fried capsicum + onion</li><li>Salad</li><li>Chaas</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+  </div>
+
+      </div>
+      <div class="meal-card" data-day-card="5">
+        
+
+  <header class="meal-card__hd"><h3>Saturday</h3></header>
+  <div class="meal-rows">
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">7:30 AM</div>
+          <div class="meal-name">Breakfast</div>
+          <div class="meal-kcal">450 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Paneer paratha (1, low oil) + 1 katori dahi</li><li>1 cup chai (no sugar)</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">11:00 AM</div>
+          <div class="meal-name">Snack</div>
+          <div class="meal-kcal">150 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>1 apple + 1 boiled egg white</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">1:30 PM</div>
+          <div class="meal-name">Lunch</div>
+          <div class="meal-kcal">650 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>150 g chicken biryani (homemade, brown rice, 1 small katori)</li><li>Raita (low-fat dahi, kheera, pudina)</li><li>Salad</li>
+          </ul>
+          <p class="meal-note">Saturday treat-lunch — but keep portion controlled</p>
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">5:00 PM</div>
+          <div class="meal-name">Evening</div>
+          <div class="meal-kcal">150 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Green tea + bhuna chana 25 g</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">8:00 PM</div>
+          <div class="meal-name">Dinner</div>
+          <div class="meal-kcal">550 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Egg curry (3 eggs, 1 yolk only)</li><li>1 chapati</li><li>Salad</li><li>Chaas</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+  </div>
+
+      </div>
+      <div class="meal-card" data-day-card="6">
+        
+
+  <header class="meal-card__hd"><h3>Sunday</h3></header>
+  <div class="meal-rows">
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">8:00 AM</div>
+          <div class="meal-name">Breakfast</div>
+          <div class="meal-kcal">480 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Anda bhurji (5 egg whites + 2 yolks) + 1 atta paratha (1 tsp ghee)</li><li>1 katori dahi</li><li>Chai</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">11:30 AM</div>
+          <div class="meal-name">Snack</div>
+          <div class="meal-kcal">120 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Coconut water + handful of bhuna chana</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">2:00 PM</div>
+          <div class="meal-name">Lunch (free meal)</div>
+          <div class="meal-kcal">750 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>You earned 1 small treat — pick ONE: a small portion of biryani, 2 pcs seekh kebab, or 1 small Indori chaat (eat slowly, no Pepsi).</li><li>Pair with kachumbar salad and dahi.</li><li>Drink 500 ml water before the meal.</li>
+          </ul>
+          <p class="meal-note">Weekly diet break — keeps you sane and resets leptin</p>
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">5:30 PM</div>
+          <div class="meal-name">Evening</div>
+          <div class="meal-kcal">150 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Green tea + 10 almonds</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+      <div class="meal-row">
+        <div class="meal-row__meta">
+          <div class="meal-time">8:30 PM</div>
+          <div class="meal-name">Dinner</div>
+          <div class="meal-kcal">500 kcal</div>
+        </div>
+        <div class="meal-row__items">
+          <ul>
+            <li>Light: Vegetable soup + grilled chicken breast 100 g + salad</li><li>Chaas</li>
+          </ul>
+          
+        </div>
+      </div>
+    
+  </div>
+
+      </div>
+  </div>
+
+  <h3 style="font-family:var(--serif); font-size:24px; margin: 42px 0 16px;">What to eat, what to limit, what to avoid</h3>
+  <div class="food-cols">
+    <div class="food-list food-list--good">
+      <h4>✓ Eat freely</h4>
+      <ul><li>Egg whites, whole eggs (1–2 yolks/day)</li><li>Chicken breast, fish (rohu, basa, salmon), chicken keema</li><li>Mutton — lean cuts, paya/yakhni soup (max 1× per week)</li><li>Paneer (low-fat), low-fat dahi, chaas, hung curd</li><li>All daals: moong, masoor, toor, chana, rajma, sprouts</li><li>Bhindi, lauki, baingan, palak, methi, gobhi, capsicum, tomato, kheera, mushroom</li><li>Whole-wheat chapati (1–2 per meal), multigrain roti</li><li>Brown rice / regular rice — 1 small katori max, once per day</li><li>Almonds, walnuts, pistachios (10–15 per day total)</li><li>Whole spices: haldi, jeera, dhania, hing, ajwain, dalchini, kali mirch</li><li>Lemon, mint, coriander, ginger, garlic, green chilli</li></ul>
+    </div>
+    <div class="food-list food-list--limit">
+      <h4>~ In moderation</h4>
+      <ul><li>Biryani, pulao, naan, paratha — 1× per week, small portion</li><li>Mutton korma, nihari, rogan josh — 1× per fortnight</li><li>Mithai (jalebi, gulab jamun, peda) — 1 small piece, 1× per fortnight</li><li>Refined oils &amp; ghee — total 2 tsp per day max</li><li>Cashews — small handful, occasional</li><li>Mango / lychee / chikoo — 1 small portion, occasional</li></ul>
+    </div>
+    <div class="food-list food-list--avoid">
+      <h4>✗ Avoid for 12 weeks</h4>
+      <ul><li>Sugar in chai/coffee — switch to no sugar (use cinnamon for warmth)</li><li>Sugary drinks: Frooti, Pepsi, Maaza, packaged juice — replace with chaas, nimbu pani (no sugar), green tea</li><li>Maida — naan, bhature, white bread, biscuits, pasta</li><li>Deep-fried street food: samosa, kachori, pakoda, bhajiya (Sarafa Bazaar — max 1× per month)</li><li>Late-night eating after 10 PM</li><li>Bhutte ka kees + cream, malai-heavy curries, Indori sev poha drowned in oil</li></ul>
+    </div>
+  </div>
+
+  <h3 style="font-family:var(--serif); font-size:24px; margin: 42px 0 16px;">Indore-specific smart swaps</h3>
+  <div class="swaps">
+    <table>
+      <thead><tr><th>Instead of</th><th>Have this</th></tr></thead>
+      <tbody>
+        <tr><td>Oily Indori poha (1 plate)</td><td>Egg-veg poha with 1 tsp oil + 4 egg whites on the side</td></tr><tr><td>Bhutte ka kees with cream &amp; ghee</td><td>Steamed sweet corn + lemon + chaat masala</td></tr><tr><td>Garadu fry</td><td>Boiled garadu tossed with lemon, hari mirch &amp; sendha namak</td></tr><tr><td>Sabudana khichdi in ghee + peanuts</td><td>Quinoa khichdi with veg, 1 tsp ghee max</td></tr><tr><td>Indori chai (full milk + 2 tsp sugar)</td><td>Kadak chai with toned milk, no sugar (add a pinch of cinnamon)</td></tr><tr><td>Jalebi-rabri at Sarafa</td><td>1 medjool date + Greek yogurt at home</td></tr><tr><td>Samosa + chai</td><td>Roasted chana 30 g + chai (no sugar)</td></tr><tr><td>Pani puri (sweet water)</td><td>Pani puri (only spicy water, 4 puris max — once a fortnight)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="supplements">
+  <div class="section__hd">
+    <span class="section__num">05</span>
+    <h2>Supplements (Optional)</h2>
+  </div>
+  <p class="section__intro">None are required. They top up specific gaps. Pick brands with COA available — MuscleBlaze, ON Gold Standard, GNC are reliable in Indore.</p>
+  <div class="supp-grid">
+    
+      <div class="supp">
+        <h4>Whey protein</h4>
+        <div class="dose">1–2 scoops/day (training days)</div>
+        <p>Convenient protein top-up to hit 180 g target</p>
+      </div>
+      <div class="supp">
+        <h4>Creatine monohydrate</h4>
+        <div class="dose">5 g/day, every day</div>
+        <p>Most-researched supplement on earth. Safe. Builds strength and lean mass.</p>
+      </div>
+      <div class="supp">
+        <h4>Vitamin D3</h4>
+        <div class="dose">2,000 IU/day</div>
+        <p>80%+ of Indians are deficient; affects mood, strength, immunity</p>
+      </div>
+      <div class="supp">
+        <h4>Multivitamin</h4>
+        <div class="dose">1/day</div>
+        <p>Insurance against micronutrient gaps during a calorie deficit</p>
+      </div>
+      <div class="supp">
+        <h4>Fish oil (Omega-3)</h4>
+        <div class="dose">1 g EPA+DHA/day</div>
+        <p>Skip if you eat fish 3× per week. Otherwise helpful for joint &amp; heart health.</p>
+      </div>
+      <div class="supp">
+        <h4>Methi seed water</h4>
+        <div class="dose">1 tsp seeds soaked overnight, drink in AM</div>
+        <p>Traditional, free, mild benefit for blood sugar &amp; digestion</p>
+      </div>
+  </div>
+</section>
+
+<section id="tracker">
+  <div class="section__hd">
+    <span class="section__num">06</span>
+    <h2>12-Week Progress Tracker</h2>
+  </div>
+  <p class="section__intro">Print this section. Weigh in once a week — Sunday morning, after toilet, before food. Measure your waist on the first of each month. Trends matter more than individual numbers.</p>
+  <div class="tracker">
+    <table>
+      <thead><tr><th>Week</th><th>Weight (kg)</th><th>Waist (cm)</th><th>Avg sleep (h)</th><th>Workouts done</th><th>Energy 1–10</th></tr></thead>
+      <tbody>
+        <tr><td>Week 1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 4</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 5</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 6</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 7</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 8</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 9</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 10</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 11</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Week 12</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="red-flags" style="margin-top: 28px;">
+    <h4>⚠ Red flags — see a doctor</h4>
+    <ul>
+      <li>Chest pain, tightness, or pressure during exercise — stop and see a cardiologist</li><li>Severe dizziness or fainting</li><li>Resting heart rate over 100 bpm regularly</li><li>Sudden shortness of breath disproportionate to effort</li><li>Snoring + daytime sleepiness — get screened for sleep apnea (common at 114 kg)</li><li>Knee, hip or lower back pain that lasts &gt; 3 days — rest and consult physio</li><li>BP not checked in last 6 months — get it done in week 1</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="coach-note">
+    <h3>A note from your coach</h3>
+    <p>Tanveer — the maths is in your favour. At 114 kg, the first 10–12 kg will come off relatively easily because your body has a lot of fuel to burn and very little muscle has been trained recently. The trap is the next 10. That's where most men quit.</p>
+    <p><strong>Stick to four numbers and you'll get there:</strong></p>
+    <ul>
+      <li>180 g protein every day</li>
+      <li>10,000 steps every day</li>
+      <li>5 gym sessions per week</li>
+      <li>7+ hours sleep, every night</li>
+    </ul>
+    <p>Do those four for 12 weeks. Then we'll reassess and write the next plan.</p>
+    <p class="sign">— Coach</p>
+  </div>
+</section>
+
+<footer class="foot">
+  Built for Tanveer · 2026-05-16 · This plan is general fitness guidance, not medical advice. Get a basic blood panel and a BP check before week 1.
+</footer>
+
+<script>
+  // Meal day tabs
+  const tabs = document.querySelectorAll(".meal-tab");
+  const cards = document.querySelectorAll("[data-day-card]");
+  tabs.forEach((t) => {
+    t.addEventListener("click", () => {
+      tabs.forEach((x) => x.classList.remove("is-active"));
+      cards.forEach((c) => c.classList.remove("is-active"));
+      t.classList.add("is-active");
+      const idx = t.getAttribute("data-day");
+      document.querySelector('[data-day-card="' + idx + '"]').classList.add("is-active");
+    });
+  });
+
+  // Smooth-scroll nav
+  document.querySelectorAll('.nav a[href^="#"]').forEach((a) => {
+    a.addEventListener("click", (e) => {
+      const target = document.querySelector(a.getAttribute("href"));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+</script>
+</body>
+</html>
