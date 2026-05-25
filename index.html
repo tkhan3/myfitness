@@ -167,12 +167,17 @@
   .ex-table tr:last-child td { border-bottom: none; }
   .ex-name { font-weight: 600; color: var(--ink); }
   .watch {
-    display: inline-flex; align-items: center; gap: 4px;
+    display: inline-flex; align-items: center; gap: 6px;
     background: var(--accent); color: white; text-decoration: none;
     padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600;
     white-space: nowrap;
   }
   .watch:hover { background: var(--accent-deep); color: white; }
+  .watch .creator { font-size: 11px; font-weight: 500; opacity: 0.9; padding-left: 4px; border-left: 1px solid rgba(255,255,255,0.4); margin-left: 2px; padding-left: 8px; }
+  .ex-alt { font-size: 12px; color: var(--ink-soft); margin-top: 4px; font-weight: 400; line-height: 1.4; }
+  .alt-label { display: inline-block; background: var(--accent-soft); color: var(--accent-deep); padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin-right: 4px; }
+  .cardio-finisher { margin: 16px -4px 12px; padding: 12px 16px; background: linear-gradient(90deg, var(--accent-soft), #fff7ed); border-left: 4px solid var(--accent); border-radius: 8px; font-size: 14px; color: var(--ink); }
+  .cardio-label { display: inline-block; background: var(--accent); color: white; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 8px; }
 
   /* ---------- meals ---------- */
   .meal-tabs {
@@ -382,7 +387,7 @@
       <div class="eyebrow">Monday</div>
       <h3>Chest + Triceps + Core</h3>
     </div>
-    <span class="pill">~50 min</span>
+    <span class="pill">~60 min (incl. cardio)</span>
   </header>
   <p class="warmup"><strong>Warm-up.</strong> 5 min treadmill walk + arm circles + 2 light warm-up sets</p>
   <div class="ex-table-wrap">
@@ -391,50 +396,51 @@
     <tbody>
       
         <tr>
-          <td class="ex-name">Barbell Bench Press</td>
+          <td class="ex-name">Barbell Bench Press<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Smith Machine Bench Press</div></td>
           <td>4</td>
           <td>8–10</td>
           <td>90 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=barbell%20bench%20press%20proper%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=vcBig73ojpE" target="_blank" rel="noopener noreferrer" title="Jeff Nippard">▶ Watch <span class="creator">Jeff Nippard</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Incline Dumbbell Press</td>
+          <td class="ex-name">Incline Dumbbell Press<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Incline Smith Press</div></td>
           <td>3</td>
           <td>10–12</td>
           <td>75 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=incline%20dumbbell%20press%20form%20Jeff%20Nippard" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=SHsUIZiNdeY" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Cable Chest Fly (mid)</td>
+          <td class="ex-name">Cable Chest Fly (mid)<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Pec Deck Machine</div></td>
           <td>3</td>
           <td>12</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=cable%20chest%20fly%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=eQ_NBB6OBH4" target="_blank" rel="noopener noreferrer" title="Form Tutorial">▶ Watch <span class="creator">Form Tutorial</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Tricep Rope Pushdown</td>
+          <td class="ex-name">Tricep Rope Pushdown<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Tricep Skullcrusher (EZ bar)</div></td>
           <td>3</td>
           <td>12–15</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=tricep%20rope%20pushdown%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=7R88yqmcGrw" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Overhead Dumbbell Tricep Extension</td>
           <td>3</td>
           <td>12</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=overhead%20dumbbell%20tricep%20extension%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=fYqswDVbJDg" target="_blank" rel="noopener noreferrer" title="Form Tutorial">▶ Watch <span class="creator">Form Tutorial</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Plank</td>
           <td>3</td>
           <td>45 sec hold</td>
           <td>45 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=perfect%20plank%20form%20tutorial" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=jYX5FpYZA7c" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
     </tbody>
   </table>
   </div>
+  <div class="cardio-finisher"><span class="cardio-label">Cardio finisher</span> 10 min incline treadmill walk (incline 8, 4.5 km/h) — must do</div>
 </article>
 <article class="day-card">
   <header class="day-card__hd">
@@ -442,7 +448,7 @@
       <div class="eyebrow">Tuesday</div>
       <h3>Back + Biceps</h3>
     </div>
-    <span class="pill">~50 min</span>
+    <span class="pill">~60 min (incl. cardio)</span>
   </header>
   <p class="warmup"><strong>Warm-up.</strong> 5 min rowing machine + band pull-aparts</p>
   <div class="ex-table-wrap">
@@ -455,46 +461,47 @@
           <td>4</td>
           <td>10–12</td>
           <td>90 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=lat%20pulldown%20form%20Jeff%20Nippard" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=5Hjhg43P5vE" target="_blank" rel="noopener noreferrer" title="Jeff Nippard">▶ Watch <span class="creator">Jeff Nippard</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Seated Cable Row</td>
+          <td class="ex-name">Seated Cable Row<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> T-Bar Row (or Smith Machine Bent Row)</div></td>
           <td>3</td>
           <td>10</td>
           <td>75 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=seated%20cable%20row%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=rnnZr62A94s" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">One-Arm Dumbbell Row</td>
+          <td class="ex-name">One-Arm Dumbbell Row<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Pronated Smith Machine Row</div></td>
           <td>3</td>
           <td>10 / side</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=one%20arm%20dumbbell%20row%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=gfUg6qWohTk" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Face Pulls</td>
           <td>3</td>
           <td>15</td>
           <td>45 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=face%20pull%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=eIq5CB9JfKE" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Dumbbell Bicep Curl</td>
+          <td class="ex-name">Dumbbell Bicep Curl<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Barbell or EZ-Bar Curl</div></td>
           <td>3</td>
           <td>12</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20bicep%20curl%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=KS-1_r9K4XA" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Hammer Curl</td>
+          <td class="ex-name">Hammer Curl<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Preacher Curl (machine)</div></td>
           <td>3</td>
           <td>12</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=hammer%20curl%20form%20tutorial" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=7jqi2qWAUJk" target="_blank" rel="noopener noreferrer" title="Form Tutorial">▶ Watch <span class="creator">Form Tutorial</span></a></td>
         </tr>
     </tbody>
   </table>
   </div>
+  <div class="cardio-finisher"><span class="cardio-label">Cardio finisher</span> 10 min elliptical at moderate pace — must do</div>
 </article>
 <article class="day-card">
   <header class="day-card__hd">
@@ -515,46 +522,47 @@
           <td>10 rounds</td>
           <td>1 min hard / 1 min easy</td>
           <td>—</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=treadmill%20incline%20HIIT%20walking%20workout%20fat%20loss" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=meR1rZfIg40" target="_blank" rel="noopener noreferrer" title="Follow-Along">▶ Watch <span class="creator">Follow-Along</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Steady Incline Walk</td>
           <td>1</td>
           <td>10 min @ 4.5 km/h, incline 8</td>
           <td>—</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=12-3-30%20treadmill%20walking%20workout" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=8YRYrVLibRg" target="_blank" rel="noopener noreferrer" title="12-3-30 Explainer">▶ Watch <span class="creator">12-3-30 Explainer</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Dead Bug</td>
           <td>3</td>
           <td>12 / side</td>
           <td>30 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=dead%20bug%20exercise%20form%20core" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=g_BYB0R-4Ws" target="_blank" rel="noopener noreferrer" title="Form Tutorial">▶ Watch <span class="creator">Form Tutorial</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Russian Twists (medicine ball)</td>
           <td>3</td>
           <td>20 total</td>
           <td>30 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=russian%20twist%20form%20core%20exercise" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=-BzNffL_6YE" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Hanging Knee Raise</td>
           <td>3</td>
           <td>10</td>
           <td>45 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=hanging%20knee%20raise%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=Pr1ieGZ5atk" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Mountain Climbers</td>
           <td>3</td>
           <td>30 sec</td>
           <td>30 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=mountain%20climber%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=cnyTQDSE884" target="_blank" rel="noopener noreferrer" title="Form Tutorial">▶ Watch <span class="creator">Form Tutorial</span></a></td>
         </tr>
     </tbody>
   </table>
   </div>
+  
 </article>
 <article class="day-card">
   <header class="day-card__hd">
@@ -562,7 +570,7 @@
       <div class="eyebrow">Thursday</div>
       <h3>Legs + Glutes</h3>
     </div>
-    <span class="pill">~55 min</span>
+    <span class="pill">~65 min (incl. cardio)</span>
   </header>
   <p class="warmup"><strong>Warm-up.</strong> 5 min stationary bike + bodyweight squats x 15</p>
   <div class="ex-table-wrap">
@@ -571,50 +579,51 @@
     <tbody>
       
         <tr>
-          <td class="ex-name">Goblet Squat (dumbbell)</td>
+          <td class="ex-name">Goblet Squat (dumbbell)<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Smith Machine Squat</div></td>
           <td>4</td>
           <td>10</td>
           <td>90 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=goblet%20squat%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=gm4ln6PO4rc" target="_blank" rel="noopener noreferrer" title="Form Tutorial">▶ Watch <span class="creator">Form Tutorial</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Leg Press</td>
           <td>3</td>
           <td>12</td>
           <td>90 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=leg%20press%20proper%20form%20Jeff%20Nippard" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=P8TfK9wmFVo" target="_blank" rel="noopener noreferrer" title="Dr Mike Israetel">▶ Watch <span class="creator">Dr Mike Israetel</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Romanian Deadlift (dumbbell)</td>
+          <td class="ex-name">Romanian Deadlift (dumbbell)<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Smith Machine Romanian Deadlift</div></td>
           <td>3</td>
           <td>10</td>
           <td>75 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20romanian%20deadlift%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=hQgFixeXdZo" target="_blank" rel="noopener noreferrer" title="Form Tutorial">▶ Watch <span class="creator">Form Tutorial</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Walking Lunges</td>
+          <td class="ex-name">Walking Lunges<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Smith Machine Static Lunge</div></td>
           <td>3</td>
           <td>10 / leg</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=walking%20lunge%20form%20tutorial" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=w4OUtEO27UM" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Seated Leg Curl</td>
           <td>3</td>
           <td>12</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=seated%20leg%20curl%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/shorts/jNC3aYBHL1I" target="_blank" rel="noopener noreferrer" title="Jeff Nippard">▶ Watch <span class="creator">Jeff Nippard</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Standing Calf Raise</td>
+          <td class="ex-name">Standing Calf Raise<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Smith Machine Calf Raise</div></td>
           <td>3</td>
           <td>15</td>
           <td>45 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=standing%20calf%20raise%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=21inrjhoFkQ" target="_blank" rel="noopener noreferrer" title="Jeff Nippard">▶ Watch <span class="creator">Jeff Nippard</span></a></td>
         </tr>
     </tbody>
   </table>
   </div>
+  <div class="cardio-finisher"><span class="cardio-label">Cardio finisher</span> 10 min incline treadmill walk (low impact after legs) — must do</div>
 </article>
 <article class="day-card">
   <header class="day-card__hd">
@@ -622,7 +631,7 @@
       <div class="eyebrow">Friday</div>
       <h3>Shoulders + Arms</h3>
     </div>
-    <span class="pill">~50 min</span>
+    <span class="pill">~60 min (incl. cardio)</span>
   </header>
   <p class="warmup"><strong>Warm-up.</strong> 5 min cardio + shoulder dislocates with band</p>
   <div class="ex-table-wrap">
@@ -631,50 +640,51 @@
     <tbody>
       
         <tr>
-          <td class="ex-name">Seated Dumbbell Shoulder Press</td>
+          <td class="ex-name">Seated Dumbbell Shoulder Press<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Smith Machine Seated Shoulder Press</div></td>
           <td>4</td>
           <td>10</td>
           <td>90 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=seated%20dumbbell%20shoulder%20press%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=Gu1t7X2yq4M" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Dumbbell Lateral Raise</td>
+          <td class="ex-name">Dumbbell Lateral Raise<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Cable Lateral Raise</div></td>
           <td>3</td>
           <td>15</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20lateral%20raise%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/shorts/NZsldrqqca8" target="_blank" rel="noopener noreferrer" title="Jeff Nippard">▶ Watch <span class="creator">Jeff Nippard</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Rear Delt Fly (machine or DB)</td>
+          <td class="ex-name">Rear Delt Fly (machine or DB)<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Reverse Pec Deck</div></td>
           <td>3</td>
           <td>12</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=rear%20delt%20fly%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=ljgqer1ZpXg" target="_blank" rel="noopener noreferrer" title="Athlean-X">▶ Watch <span class="creator">Athlean-X</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">EZ Bar Curl</td>
+          <td class="ex-name">EZ Bar Curl<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Smith Machine Bicep Curl</div></td>
           <td>3</td>
           <td>10</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=EZ%20bar%20curl%20proper%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=5p4fm_362yo" target="_blank" rel="noopener noreferrer" title="Jeff Nippard">▶ Watch <span class="creator">Jeff Nippard</span></a></td>
         </tr>
         <tr>
-          <td class="ex-name">Cable Rope Tricep Extension</td>
+          <td class="ex-name">Cable Rope Tricep Extension<div class="ex-alt"><span class="alt-label">Or (if rack busy):</span> Skullcrushers (EZ bar)</div></td>
           <td>3</td>
           <td>12</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=cable%20rope%20tricep%20extension%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=l4i7iDLiMXs" target="_blank" rel="noopener noreferrer" title="Form Tutorial">▶ Watch <span class="creator">Form Tutorial</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Farmer&#39;s Walk (heavy dumbbells)</td>
           <td>3</td>
           <td>30 sec / 20 m</td>
           <td>60 sec</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=farmers%20walk%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=LJaq4BS7KpE" target="_blank" rel="noopener noreferrer" title="Squat University">▶ Watch <span class="creator">Squat University</span></a></td>
         </tr>
     </tbody>
   </table>
   </div>
+  <div class="cardio-finisher"><span class="cardio-label">Cardio finisher</span> 10 min slow run/walk mix on treadmill — must do</div>
 </article>
 <article class="day-card">
   <header class="day-card__hd">
@@ -695,25 +705,26 @@
           <td>1</td>
           <td>5–6 km @ 5.5 km/h</td>
           <td>—</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=brisk%20walking%20technique%20fat%20loss" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=brisk%20walking%20technique%20fat%20loss" target="_blank" rel="noopener noreferrer" title="Search">▶ Watch <span class="creator">Search</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Full Body Mobility Flow</td>
           <td>1</td>
           <td>15 min</td>
           <td>—</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=full%20body%20mobility%20routine%2015%20min%20beginner" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=EtTAWQZ_dJc" target="_blank" rel="noopener noreferrer" title="Follow-Along">▶ Watch <span class="creator">Follow-Along</span></a></td>
         </tr>
         <tr>
           <td class="ex-name">Hip Flexor Stretch</td>
           <td>2</td>
           <td>30 sec / side</td>
           <td>—</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=couch%20stretch%20hip%20flexor%20Kelly%20Starrett" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/watch?v=ZkzFT6rRMhQ" target="_blank" rel="noopener noreferrer" title="Kelly Starrett">▶ Watch <span class="creator">Kelly Starrett</span></a></td>
         </tr>
     </tbody>
   </table>
   </div>
+  
 </article>
 <article class="day-card">
   <header class="day-card__hd">
@@ -734,18 +745,19 @@
           <td>—</td>
           <td>20–30 min</td>
           <td>—</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=zone%202%20walking%20benefits" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=zone%202%20walking%20benefits" target="_blank" rel="noopener noreferrer" title="form video">▶ Watch</a></td>
         </tr>
         <tr>
           <td class="ex-name">Foam roll / sauna / massage</td>
           <td>—</td>
           <td>—</td>
           <td>—</td>
-          <td><a class="watch" href="https://www.youtube.com/results?search_query=foam%20roller%20routine%20full%20body" target="_blank" rel="noopener noreferrer">▶ Watch</a></td>
+          <td><a class="watch" href="https://www.youtube.com/results?search_query=foam%20roller%20routine%20full%20body" target="_blank" rel="noopener noreferrer" title="form video">▶ Watch</a></td>
         </tr>
     </tbody>
   </table>
   </div>
+  
 </article>
   </div>
 
@@ -757,35 +769,35 @@
         
           <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
             <span class="ex-name">Dumbbell Goblet Squat</span>
-            <a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20goblet%20squat%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+            <a class="watch" href="https://www.youtube.com/watch?v=gm4ln6PO4rc" target="_blank" rel="noopener noreferrer">▶ Watch <span class="creator">Form Tutorial</span></a>
           </li>
           <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
             <span class="ex-name">Dumbbell Floor Press</span>
-            <a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20floor%20press%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+            <a class="watch" href="https://www.youtube.com/watch?v=AqYFvc9t_vU" target="_blank" rel="noopener noreferrer">▶ Watch <span class="creator">Form Tutorial</span></a>
           </li>
           <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
             <span class="ex-name">Bent-Over Dumbbell Row</span>
-            <a class="watch" href="https://www.youtube.com/results?search_query=bent%20over%20dumbbell%20row%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+            <a class="watch" href="https://www.youtube.com/watch?v=gfUg6qWohTk" target="_blank" rel="noopener noreferrer">▶ Watch <span class="creator">Athlean-X</span></a>
           </li>
           <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
             <span class="ex-name">Standing Dumbbell Press</span>
-            <a class="watch" href="https://www.youtube.com/results?search_query=standing%20dumbbell%20overhead%20press%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+            <a class="watch" href="https://www.youtube.com/watch?v=Gu1t7X2yq4M" target="_blank" rel="noopener noreferrer">▶ Watch <span class="creator">Athlean-X</span></a>
           </li>
           <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
             <span class="ex-name">Dumbbell Romanian Deadlift</span>
-            <a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20romanian%20deadlift%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+            <a class="watch" href="https://www.youtube.com/watch?v=hQgFixeXdZo" target="_blank" rel="noopener noreferrer">▶ Watch <span class="creator">Form Tutorial</span></a>
           </li>
           <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
             <span class="ex-name">Dumbbell Curl + Press</span>
-            <a class="watch" href="https://www.youtube.com/results?search_query=dumbbell%20curl%20to%20press%20form" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+            <a class="watch" href="https://www.youtube.com/watch?v=l6ApagwH0TY" target="_blank" rel="noopener noreferrer">▶ Watch <span class="creator">Form Tutorial</span></a>
           </li>
           <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
             <span class="ex-name">Push-ups (on knees if needed)</span>
-            <a class="watch" href="https://www.youtube.com/results?search_query=perfect%20push%20up%20form%20Athlean-X" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+            <a class="watch" href="https://www.youtube.com/watch?v=Zi6c09DRGxk" target="_blank" rel="noopener noreferrer">▶ Watch <span class="creator">Athlean-X</span></a>
           </li>
           <li style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--line);">
             <span class="ex-name">Plank + Side Plank</span>
-            <a class="watch" href="https://www.youtube.com/results?search_query=plank%20side%20plank%20progression%20core" target="_blank" rel="noopener noreferrer">▶ Watch</a>
+            <a class="watch" href="https://www.youtube.com/watch?v=jYX5FpYZA7c" target="_blank" rel="noopener noreferrer">▶ Watch <span class="creator">Athlean-X</span></a>
           </li>
       </ul>
     </div>
